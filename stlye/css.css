@@ -29,7 +29,7 @@ body{
     /* position: relative; */
     position: absolute;
     right: 10px;
-    z-index: 1;
+    z-index: 10;
 }
 .meun_all::after{
     content: "";
@@ -59,6 +59,7 @@ body{
     text-align: center;
 }
 .meun{
+    z-index: 1;
     list-style: none;
     display: none;
     /* display: flex;
@@ -71,6 +72,7 @@ body{
     position: absolute;
     right: 0;
     transition: all .5s;
+    background: #b1871c;
 }
 .meun a{
     display: block;
@@ -81,6 +83,14 @@ body{
     color: #000;
     border-bottom: 1px solid #000;
     transition: all .5s;
+}
+.meun .lo img{
+    width: 100%;
+}
+.meun .lo{
+    margin: 100px auto;
+    width: 60%;
+    border: 0;
 }
 .meun .In{
     margin-top: 150px;
@@ -113,4 +123,10 @@ body{
     text-align: center;
     margin-top: 20px;
     color: #ccc;
+}
+@media screen and (min-width:768px){
+    .meun{
+        display: block;
+    }
+
 }

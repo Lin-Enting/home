@@ -10,9 +10,10 @@
     <div class="logo">
             <img src="images/img.png" alt="童城">
     </div>
-    <nav>
-        <div class="meun_all"></div>
-            <ul class="meun">
+    <div class="meun_all"></div>
+    <ul class="meun">
+            <nav>
+                <li class="lo"><img src="images/img.png" alt=""></li>
                 <li><a href="#Introduction" class="In">簡介</a></li>
                 <li><a href="#popular" class="po">熱門景點</a></li>
                 <li><a href="#Reco" class="re">推薦美食</a></li>
@@ -23,7 +24,7 @@
             <h2>簡介</h2>
             <p>難得的假期，想要出去走走卻又不知何去何從，沒關係~在這能找到適合爸爸媽媽帶著
                 家中的 寶貝一同吃、喝、玩樂的絕佳地點，讓即使忙碌的 上班族或是家庭主
-                (夫)婦，能在這寶貴的假期中陪伴寶貝們，在童城中創造美號回憶 。</p>
+                夫/婦，能在這寶貴的假期中陪伴寶貝們，在童城中創造美號回憶 。</p>
         </div>
 
 
@@ -112,14 +113,14 @@
     <script>
         $(document).ready(function(){
             $('.meun_all').click(function(){
-                $('.meun').toggle(2000);
+                $('.meun').toggle();
             })
 
 
 
 
             $('.In').click(function(){
-                $('#Introduction').fadeTo(function(){
+                $('#Introduction').show(function(){
                     $('.logo,#popular,#Reco').hide();
                 })
             })
@@ -127,14 +128,14 @@
 
 
             $('.po').click(function(){
-                $('#popular').fadeTo(function(){
+                $('#popular').show(function(){
                     $('.logo,#Introduction,#Reco').hide();
                 })
             })
 
 
             $('.re').click(function(){
-                $('#Reco').fadeTo(function(){
+                $('#Reco').show(function(){
                     $('.logo,#Introduction,#popular').hide();
                 })
             })

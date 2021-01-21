@@ -31,6 +31,13 @@
 
         <div class="items" id="popular">
             <h2>熱門景點</h2>
+            <ul>
+                <li><a href="">落羽松</a></li>
+                <li><a href="">萬年峽谷</a></li>
+                <li><a href="">瓔珞手作花坊</a></li>
+                <li><a href="">北港</a></li>
+                <li><a href="">澄霖沉香味道森林館</a></li>
+            </ul>
             <p>雲林有農業首都之稱，到處都能看到田地 但空拍下的視角，滿片田地如大自然的布畫還有唯美的瑰莊園、浪漫教堂
                 和景觀餐廳玫 就連上山欣賞夜景都還能吃鍋兼養生泡腳，讓來雲林完的帥哥、美女也能很溫暖 誰說雲林
                 很難玩，跟著滿分週末走跳雲林包準每個景點都能讓你有難忘的回憶啦。</p>
@@ -72,6 +79,14 @@
 
         <div class="items" id="Reco">
             <h2>推薦美食</h2>
+            <ul>
+                <li><a href="">巧克力工房</a></li>
+                <li><a href="">塔吉特</a></li>
+                <li><a href="">茶工業現萃茶飲</a></li>
+                <li><a href="">日飴甘味處蛋糕伴手禮午茶</a></li>
+                <li><a href="">咖哩老師</a></li>
+                <li><a href="">野川堂秘境鍋物</a></li>
+            </ul>
             <p>除了欣賞當地特色老街建築外,當然就是要來品嘗在地美食,雲林好多美食都好好吃,而且雲林內包含斗六、古坑
                 、林內、斗南、大埤、元長、土庫、虎尾、莿桐、二崙、崙背、褒忠、麥寮、東勢、四湖，元長、北港、水林、口湖；台西等等。 
                 在這能找到必吃雲林美食，想要餐廳、甜點、下午茶、早午餐、零食、夜市等等通通都有。</p>
@@ -117,8 +132,6 @@
             })
 
 
-
-
             $('.In').click(function(){
                 $('#Introduction').show(function(){
                     $('.logo,#popular,#Reco').hide();
@@ -138,6 +151,18 @@
                 $('#Reco').show(function(){
                     $('.logo,#Introduction,#popular').hide();
                 })
+            })
+
+
+
+            $('#popular h2').click(function(){
+                $('#popular ul').toggle();
+            })
+            
+
+
+            $('#Reco h2').click(function(){
+                $('#Reco ul').toggle();
             })
 
 

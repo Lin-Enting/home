@@ -83,17 +83,15 @@ body{
     color: #000;
     border-bottom: 1px solid #000;
     transition: all .5s;
+    position: relative;
 }
 .meun .lo img{
     width: 100%;
 }
 .meun .lo{
-    margin: 100px auto;
+    margin: 100px auto 50px;
     width: 60%;
     border: 0;
-}
-.meun .In{
-    margin-top: 150px;
 }
 .meun a:hover{
     background: #ccc;
@@ -108,9 +106,54 @@ body{
     transform: translate(-50%,-50%);
 }
 .items h2{
-    margin: 30px 0;
+    margin: 10px 0;
     border-bottom: 1px solid #eee;
     padding: 20px 0;
+    position: relative;
+}
+.items p{
+    margin-top: 10px;
+}
+#popular h2::before,#Reco h2::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    transform: rotate(-45deg);
+    border-bottom: 1px solid #888;
+    border-right: 1px solid #888;
+}
+#popular ul{
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    list-style: none;
+}
+#popular li{
+    margin: 5px 10px;
+}
+#popular a{
+    text-decoration: none;
+    color: #888;
+}
+#Reco ul{
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 0;
+    list-style: none;
+}
+#Reco li{
+    margin: 5px 10px;
+}
+#Reco a{
+    text-decoration: none;
+    color: #888;
 }
 .card{
     display: none;

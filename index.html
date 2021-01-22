@@ -2,24 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./stlye/css.css">
 </head>
 <body>
-    <div class="logo">
-            <img src="images/img.png" alt="童城">
+    <input type="checkbox" name="" id="menu">
+
+
+    <header>
+
+        <label for="menu" class="sm"></label>
+        <ul class="menu">
+            <li class="lo"><img src="images/img.png" alt=""></li>
+            <li><a href="#Introduction" id="in">簡介</a></li>
+            <li><a href="#popular" id="po">熱門景點</a></li>
+            <li><a href="#Reco" id="re">推薦美食</a></li>
+            <li><a href="">聯絡我們</a></li>
+        </ul>
+
+    </header>
+
+    
+
+    <div class="container">
+        <div class="logo">
+            <img src="./images/img.png" alt="">
+            <a href="#wrap" class="Start"></a>
+        </div>
+        
     </div>
-    <div class="meun_all"></div>
-    <ul class="meun">
-            <nav>
-                <li class="lo"><img src="images/img.png" alt=""></li>
-                <li><a href="#Introduction" class="In">簡介</a></li>
-                <li><a href="#popular" class="po">熱門景點</a></li>
-                <li><a href="#Reco" class="re">推薦美食</a></li>
-                <li><a href="">聯絡我們</a></li>
-            </ul>
-    </nav>
+
+
+    <div class="wrap" id="wrap">
         <div class="items" id="Introduction">
             <h2>簡介</h2>
             <p>難得的假期，想要出去走走卻又不知何去何從，沒關係~在這能找到適合爸爸媽媽帶著
@@ -28,65 +44,40 @@
         </div>
 
 
-
         <div class="items" id="popular">
             <h2>熱門景點</h2>
-            <ul>
-                <li><a href="">落羽松</a></li>
-                <li><a href="">萬年峽谷</a></li>
-                <li><a href="">瓔珞手作花坊</a></li>
-                <li><a href="">北港</a></li>
-                <li><a href="">澄霖沉香味道森林館</a></li>
-            </ul>
             <p>雲林有農業首都之稱，到處都能看到田地 但空拍下的視角，滿片田地如大自然的布畫還有唯美的瑰莊園、浪漫教堂
                 和景觀餐廳玫 就連上山欣賞夜景都還能吃鍋兼養生泡腳，讓來雲林完的帥哥、美女也能很溫暖 誰說雲林
                 很難玩，跟著滿分週末走跳雲林包準每個景點都能讓你有難忘的回憶啦。</p>
                 <div class="card">
-                    <img src="./images/Larix pine.jpg" alt="落羽松">
                     <div class="text">
                         <h3>落羽松</h3>
                     </div>
+                    <img src="./images/Larix pine.jpg" alt="落羽松">
                 </div>
                 <div class="card">
-                    <img src="./images/Wannian Canyon.jpg" alt="萬年峽谷">
                     <div class="text">
                         <h3>萬年峽谷</h3>
                     </div>
+                    <img src="./images/Wannian Canyon.jpg" alt="萬年峽谷">
                 </div>
                 <div class="card">
-                    <img src="./images/Yingluo.jpg" alt="瓔珞手作花坊">
                     <div class="text">
                         <h3>瓔珞手作花坊</h3>
                     </div>
+                    <img src="./images/Yingluo.jpg" alt="瓔珞手作花坊">
                 </div>
                 <div class="card">
-                    <img src="./images/Beigang.jpg" alt="北港">
                     <div class="text">
                         <h3>北港</h3>
                     </div>
+                    <img src="./images/Beigang.jpg" alt="北港">
                 </div>
         </div>
 
 
-
-
-
-
-
-
-
-
-
         <div class="items" id="Reco">
             <h2>推薦美食</h2>
-            <ul>
-                <li><a href="">巧克力工房</a></li>
-                <li><a href="">塔吉特</a></li>
-                <li><a href="">茶工業現萃茶飲</a></li>
-                <li><a href="">日飴甘味處蛋糕伴手禮午茶</a></li>
-                <li><a href="">咖哩老師</a></li>
-                <li><a href="">野川堂秘境鍋物</a></li>
-            </ul>
             <p>除了欣賞當地特色老街建築外,當然就是要來品嘗在地美食,雲林好多美食都好好吃,而且雲林內包含斗六、古坑
                 、林內、斗南、大埤、元長、土庫、虎尾、莿桐、二崙、崙背、褒忠、麥寮、東勢、四湖，元長、北港、水林、口湖；台西等等。 
                 在這能找到必吃雲林美食，想要餐廳、甜點、下午茶、早午餐、零食、夜市等等通通都有。</p>
@@ -116,79 +107,13 @@
                 </div>
         </div>
 
+    </div>
 
 
+    </div>
 
+    <a href="#" class="mobile"></a>
 
-
-
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
-    <script>
-        $(document).ready(function(){
-            $('.meun_all').click(function(){
-                $('.meun').toggle();
-            })
-
-
-            $('.In').click(function(){
-                $('#Introduction').show(function(){
-                    $('.logo,#popular,#Reco').hide();
-                })
-            })
-
-
-
-            $('.po').click(function(){
-                $('#popular').show(function(){
-                    $('.logo,#Introduction,#Reco').hide();
-                })
-            })
-
-
-            $('.re').click(function(){
-                $('#Reco').show(function(){
-                    $('.logo,#Introduction,#popular').hide();
-                })
-            })
-
-
-
-            $('#popular h2').click(function(){
-                $('#popular ul').toggle();
-            })
-            
-
-
-            $('#Reco h2').click(function(){
-                $('#Reco ul').toggle();
-            })
-
-
-
-            $('.meun a').click(function(){
-                $('.meun').hide();
-            })
-
-
-
-
-
-
-        })
-
-
-
-
-
-
-
-
-
-
-
-    </script>
 
 </body>
 </html>

@@ -1,175 +1,156 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
-    background: #ffd45f;
+    background: linear-gradient(#f7de99,#e6bb5e);
+}
+#menu{
+    opacity: 0;
+    position: fixed;
+    top: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: linear-gradient(#f7de99,#e6bb5e);
+}
+.sm{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(#f7de99,#e6bb5e);
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+.sm::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 2px;
+    width: 45px;
+    height: 3px;
+    background: #888;
+    box-shadow: 0px 10px 0 #888,0px -10px 0 #888;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    transform: translateX(150%);
+    background: linear-gradient(#f7de99,#e6bb5e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    transition: all .5s;
+    z-index: 5;
+}
+.menu .lo img{
+    width: 100%;
+}
+.menu .lo{
+    margin: 0px auto 50px;
+    width: 80%;
+    border: 0;
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+    padding: 30px 30px;
+    margin: 0 20px;
+    border-bottom: 1px solid #000;
+    color: #000;
+    transition: all .5s;
+}
+.menu a:hover{
+    background: #888;
+}
+#menu:checked ~ header .menu{
+    width: 80%;
+    transform: translateX(0%);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
 }
 .logo{
-    text-align: center;
-    width: 100%;
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
 }
 .logo img{
     width: 100%;
-    max-width: 1000px;
-    padding: 0 20px;
-    
 }
-.meun_all{
+.Start{
+    position: absolute;
     width: 50px;
+    display: block;
     height: 50px;
+    bottom: -250px;
     border: 1px solid #000;
-    display: block;
-    margin: 10px 10px 0 10px;
-    /* position: relative; */
-    position: absolute;
-    right: 10px;
-    z-index: 10;
 }
-.meun_all::after{
+.Start::before{
     content: "";
-    height: 2px;
-    left: 2px;
-    width: 45px;
-    background: #888;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    box-shadow: 0 10px 0 #888, 0 -10px 0 #888;
-}
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: none;
-    margin: auto;
-    width: 100%;
-    /* border: 1px solid #000; */
-    background: #fff;
-    overflow: hidden;
-    width: 90%;
-    font-size: 20px;
-    text-align: center;
-}
-.meun{
-    z-index: 1;
-    list-style: none;
-    display: none;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    width: 80%;
-    height:100vh;
-    background: #fff;
-    position: absolute;
-    right: 0;
-    transition: all .5s;
-    background: #b1871c;
-}
-.meun a{
-    display: block;
-    text-decoration: none;
-    padding: 30px 50px;
-    width: 90%;
-    margin-left: auto;
-    color: #000;
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+    left: 15px;
     border-bottom: 1px solid #000;
-    transition: all .5s;
-    position: relative;
+    border-left: 1px solid #000;
+    transform: rotate(-45deg);
 }
-.meun .lo img{
-    width: 100%;
-}
-.meun .lo{
-    margin: 100px auto 50px;
-    width: 60%;
-    border: 0;
-}
-.meun a:hover{
-    background: #ccc;
+.wrap{
+    width: 90%;
+    margin: auto;
 }
 .items{
-    display: none;
-    width: 100%;
-    padding: 0 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 200px 0;
 }
 .items h2{
     margin: 10px 0;
-    border-bottom: 1px solid #eee;
-    padding: 20px 0;
-    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
 }
-.items p{
-    margin-top: 10px;
-}
-#popular h2::before,#Reco h2::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    transform: rotate(-45deg);
-    border-bottom: 1px solid #888;
-    border-right: 1px solid #888;
-}
-#popular ul{
-    display: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 5px;
-    list-style: none;
-}
-#popular li{
-    margin: 5px 10px;
-}
-#popular a{
-    text-decoration: none;
-    color: #888;
-}
-#Reco ul{
-    display: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 5px 0;
-    list-style: none;
-}
-#Reco li{
-    margin: 5px 10px;
-}
-#Reco a{
-    text-decoration: none;
-    color: #888;
-}
-.card{
-    display: none;
-    margin: 50px 0;
+.card h3{
+    margin: 20px 0;
 }
 .card img{
     width: 100%;
 }
-.text h3{
-    text-align: center;
-    margin-top: 20px;
-    color: #ccc;
+.mobile{
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
 }
-@media screen and (min-width:768px){
-    .meun{
-        display: block;
-    }
+.mobile::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+    left: 15px;
+    bottom: 10px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    transform: rotate(135deg);
+}
 
-}

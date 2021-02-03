@@ -222,8 +222,12 @@ form textarea{
 }
 .btn{
     width: 48%;
+    padding: 10px 5px;
     border: 0;
     cursor: pointer;
+    background: #fff;
+    color: #000;
+    margin-bottom: 50px;
 }
 .btn:hover{
     background: #eeeeee;

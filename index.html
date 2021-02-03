@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>童城雲林在地特色導覽</title>
     <link rel="stylesheet" href="./stlye/css.css">
 </head>
+
 <body>
     <input type="checkbox" name="" id="menu">
-
 
     <header>
 
         <label for="menu" class="sm"></label>
         <ul class="menu">
-            <li class="lo"><img src="images/img.png" alt=""></li>
-            <li><a href="#Introduction" id="in">簡介</a></li>
-            <li><a href="#popular" id="po">熱門景點</a></li>
-            <li><a href="#Reco" id="re">推薦美食</a></li>
-            <li><a href="">聯絡我們</a></li>
+            <li>
+                <a href="#" class="lo">
+                    <img src="images/img.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#intro" id="in">
+                    簡介
+                </a>
+            </li>
+            <li>
+                <a href="#popular" id="po">
+                    熱門景點
+                </a>
+            </li>
+            <li>
+                <a href="#Reco" id="re">
+                    推薦美食
+                </a>
+            </li>
+            <li>
+                <a href="#fo" id="foe">
+                    聯絡我們
+                </a>
+            </li>
+            <div class="cross"></div>
         </ul>
 
     </header>
 
-    
+
 
     <div class="container">
+
         <div class="logo">
             <img src="./images/img.png" alt="">
-            <a href="#wrap" class="Start"></a>
         </div>
-        
+
+        <a href="#wrap" class="Start"></a>
     </div>
 
 
     <div class="wrap" id="wrap">
-        <div class="items" id="Introduction">
+        <div class="items" id="intro">
             <h2>簡介</h2>
             <p>難得的假期，想要出去走走卻又不知何去何從，沒關係~在這能找到適合爸爸媽媽帶著
                 家中的 寶貝一同吃、喝、玩樂的絕佳地點，讓即使忙碌的 上班族或是家庭主
@@ -49,6 +72,8 @@
             <p>雲林有農業首都之稱，到處都能看到田地 但空拍下的視角，滿片田地如大自然的布畫還有唯美的瑰莊園、浪漫教堂
                 和景觀餐廳玫 就連上山欣賞夜景都還能吃鍋兼養生泡腳，讓來雲林完的帥哥、美女也能很溫暖 誰說雲林
                 很難玩，跟著滿分週末走跳雲林包準每個景點都能讓你有難忘的回憶啦。</p>
+
+            <div class="card_all">
                 <div class="card">
                     <div class="text">
                         <h3>落羽松</h3>
@@ -61,59 +86,73 @@
                     </div>
                     <img src="./images/Wannian Canyon.jpg" alt="萬年峽谷">
                 </div>
+
                 <div class="card">
                     <div class="text">
-                        <h3>瓔珞手作花坊</h3>
+                        <h3>皮頭公園</h3>
                     </div>
-                    <img src="./images/Yingluo.jpg" alt="瓔珞手作花坊">
+                    <img src="./images/park.jpg" alt="皮頭公園">
                 </div>
+
                 <div class="card">
                     <div class="text">
                         <h3>北港</h3>
                     </div>
                     <img src="./images/Beigang.jpg" alt="北港">
                 </div>
+            </div>
         </div>
 
 
         <div class="items" id="Reco">
             <h2>推薦美食</h2>
             <p>除了欣賞當地特色老街建築外,當然就是要來品嘗在地美食,雲林好多美食都好好吃,而且雲林內包含斗六、古坑
-                、林內、斗南、大埤、元長、土庫、虎尾、莿桐、二崙、崙背、褒忠、麥寮、東勢、四湖，元長、北港、水林、口湖；台西等等。 
+                、林內、斗南、大埤、元長、土庫、虎尾、莿桐、二崙、崙背、褒忠、麥寮、東勢、四湖，元長、北港、水林、口湖；台西等等。
                 在這能找到必吃雲林美食，想要餐廳、甜點、下午茶、早午餐、零食、夜市等等通通都有。</p>
+            <div class="card_all">
                 <div class="card">
-                    <img src="./images/Chocolate.jpg" alt="巧克力工房">
                     <div class="text">
                         <h3>巧克力工房</h3>
                     </div>
+                    <img src="./images/Chocolate.jpg" alt="巧克力工房">
                 </div>
                 <div class="card">
-                    <img src="./images/Target.jpg" alt="塔吉特">
-                    <div class="text">
-                        <h3>塔吉特</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/tea.jpg" alt="茶工業現萃茶飲">
                     <div class="text">
                         <h3>茶工業現萃茶飲</h3>
                     </div>
+                    <img src="./images/tea.jpg" alt="茶工業現萃茶飲">
                 </div>
                 <div class="card">
-                    <img src="./images/Japanese.jpg" alt="日飴甘味處蛋糕伴手禮午茶">
                     <div class="text">
                         <h3>日飴甘味處蛋糕伴手禮午茶</h3>
                     </div>
+                    <img src="./images/Japanese.jpg" alt="日飴甘味處蛋糕伴手禮午茶">
                 </div>
+            </div>
         </div>
 
-    </div>
 
+        <div id="fo">
+
+            <form action="">
+                <h3>聯絡我們</h3>
+                <span>姓名:</span>
+                <input type="text" placeholder="姓名" name="" id="">
+                <span>電子郵件:</span>
+                <input type="email" placeholder="電子郵件" name="" id="">
+                <textarea name="" id="" cols="50" rows="10">建議內容...</textarea>
+                <div class="btn_all">
+                    <input type="button" value="送出" class="btn">
+                    <input type="button" value="清除" class="btn">
+                </div>
+            </form>
+
+        </div>
 
     </div>
 
     <a href="#" class="mobile"></a>
 
-
 </body>
+
 </html>

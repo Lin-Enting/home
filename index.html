@@ -1,35 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>童城雲林在地特色導覽</title>
     <link rel="stylesheet" href="./stlye/css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
-        <input type="radio" name="sm" id="on">
-        <input type="radio" name="sm" id="off">
+        <input type="checkbox" name="sm" id="menu">
 
         <header>
-            <label for="on" class="sm_menu"></label>
-            <label for="off" class="smmenu"></label>
+
+            <label for="menu" class="sm"></label>
             <ul class="menu">
-                <li><a href="">簡介</a></li>
-                <li><a href="">熱門景點</a></li>
-                <li><a href="">推薦美食</a></li>
-                <li><a href="">聯絡我們</a></li>
+                <li>
+                    <a href="#" class="lo">
+                        <img :src="src" alt="童城">
+                    </a>
+                </li>
+                <li>
+                    <a href="#intro" id="in">
+                        {{ titleA1 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#popular" id="po">
+                        {{ titleA2 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#Reco" id="re">
+                        {{ titleA4 }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#fo" id="foe">
+                        {{ titleA4 }}
+                    </a>
+                </li>
+                <label for="cross" class="cross"></label>
             </ul>
-
-
 
         </header>
 
 
 
+        <div class="container" id="container">
+
+            <div class="logo">
+                <img :src="src" alt="童城">
+            </div>
+
+            <a href="#wrap" class="Start"></a>
+        </div>
 
 
+        <div class="wrap" id="wrap">
+            <div class="items" id="intro">
+                <h2>簡介</h2>
+                <p>難得的假期，想要出去走走卻又不知何去何從，沒關係~在這能找到適合爸爸媽媽帶著
+                    家中的 寶貝一同吃、喝、玩樂的絕佳地點，讓即使忙碌的 上班族或是家庭主
+                    夫/婦，能在這寶貴的假期中陪伴寶貝們，在童城中創造美號回憶 。</p>
+            </div>
+
+
+            <div class="items" id="popular">
+                <h2>熱門景點</h2>
+                <p>雲林有農業首都之稱，到處都能看到田地 但空拍下的視角，滿片田地如大自然的布畫還有唯美的瑰莊園、浪漫教堂
+                    和景觀餐廳玫 就連上山欣賞夜景都還能吃鍋兼養生泡腳，讓來雲林完的帥哥、美女也能很溫暖 誰說雲林
+                    很難玩，跟著滿分週末走跳雲林包準每個景點都能讓你有難忘的回憶啦。</p>
+
+                <div class="card_all">
+                    <div class="card">
+                        <div class="text">
+                            <h3>落羽松</h3>
+                        </div>
+                        <img src="./images/Larix pine.jpg" alt="落羽松">
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>萬年峽谷</h3>
+                        </div>
+                        <img src="./images/Wannian Canyon.jpg" alt="萬年峽谷">
+                    </div>
+
+                    <div class="card">
+                        <div class="text">
+                            <h3>皮頭公園</h3>
+                        </div>
+                        <img src="./images/park.jpg" alt="皮頭公園">
+                    </div>
+
+                    <div class="card">
+                        <div class="text">
+                            <h3>北港</h3>
+                        </div>
+                        <img src="./images/Beigang.jpg" alt="北港">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="items" id="Reco">
+                <h2>推薦美食</h2>
+                <p>除了欣賞當地特色老街建築外,當然就是要來品嘗在地美食,雲林好多美食都好好吃,而且雲林內包含斗六、古坑
+                    、林內、斗南、大埤、元長、土庫、虎尾、莿桐、二崙、崙背、褒忠、麥寮、東勢、四湖，元長、北港、水林、口湖；台西等等。
+                    在這能找到必吃雲林美食，想要餐廳、甜點、下午茶、早午餐、零食、夜市等等通通都有。</p>
+                <div class="card_all">
+                    <div class="card">
+                        <div class="text">
+                            <h3>巧克力工房</h3>
+                        </div>
+                        <img src="./images/Chocolate.jpg" alt="巧克力工房">
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>茶工業現萃茶飲</h3>
+                        </div>
+                        <img src="./images/tea.jpg" alt="茶工業現萃茶飲">
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>日飴甘味處蛋糕伴手禮午茶</h3>
+                        </div>
+                        <img src="./images/Japanese.jpg" alt="日飴甘味處蛋糕伴手禮午茶">
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="fo">
+
+                <form action="">
+                    <h3>聯絡我們</h3>
+                    <span>姓名:</span>
+                    <input type="text" placeholder="姓名" name="" id="" required="required">
+                    <span>電子郵件:</span>
+                    <input type="email" placeholder="電子郵件" name="" id="" required="required">
+                    <textarea name="" id="" cols="50" rows="10">建議內容...</textarea>
+                    <div class="btn_all">
+                        <input type="submit" value="送出" class="btn">
+                        <input type="button" value="清除" class="btn" id="no">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="mobile" id="mobile"></a>
     </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' integrity='sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js' integrity='sha512-gh+25Y0CTHtw1FSJ4gDKYDFlZ84oV0l1bY5v7xrIwep7M1aV+7JgUaTu55bMerCblbPUD22MKlStyUwO9lHq4w==' crossorigin='anonymous'></script>
+    <script>
+        let data = {
+            src: 'images/img.png',
+            titleA1: '簡介',
+            titleA2: '熱門景點',
+            titleA3: '推薦美食',
+            titleA4: '聯絡我們'
+        }
+
+        let vm = new Vue({
+            el: '#app',
+            data: data
+        })
+
+
+
+    </script>
+    
+    
+    <script>
+
+        $(function(){
+            
+            $("#mobile").hide();
+
+
+
+            if ($(document).width() < 768){
+                    $(".menu a").on('click', function(){
+                        $("#menu").click();
+                    })
+                    $(window).scroll(function () {
+                    var scrollVal = $(this).scrollTop();
+                        if(scrollVal > 700){
+                            $("#mobile").fadeIn();
+                        }else{
+                            $("#mobile").fadeOut();
+                        }
+                    })
+            }
+
+
+            
+
+        })
+
+    
+    </script>
 </body>
+
 </html>
